@@ -1157,7 +1157,7 @@ function 配置信息(UUID, 域名地址) {
 	
 	const 传输层协议 = 'ws';
 	const 伪装域名 = 域名地址;
-	const 路径 = '/?ed=2560';
+	const 路径 = '/?ed=2048';
 	
 	let 传输层安全 = ['tls',true];
 	const SNI = 域名地址;
@@ -1593,7 +1593,7 @@ function subAddresses(host,UUID,noTLS,newAddressesapi,newAddressescsv,newAddress
 			}
 
 			let 伪装域名 = host ;
-			let 最终路径 = '/?ed=2560' ;
+			let 最终路径 = '/?ed=2048' ;
 			let 节点备注 = '';
 			
 			if(proxyhosts.length > 0 && (伪装域名.includes('.workers.dev') || 伪装域名.includes('pages.dev'))) {
@@ -1645,7 +1645,7 @@ function subAddresses(host,UUID,noTLS,newAddressesapi,newAddressescsv,newAddress
 		}
 		
 		let 伪装域名 = host ;
-		let 最终路径 = '/?ed=2560' ;
+		let 最终路径 = '/?ed=2048' ;
 		let 节点备注 = '';
 		
 		if(proxyhosts.length > 0 && (伪装域名.includes('.workers.dev') || 伪装域名.includes('pages.dev'))) {
